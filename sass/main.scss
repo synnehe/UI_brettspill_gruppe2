@@ -1,0 +1,107 @@
+@import "colors";
+
+$big-font: 3rem;
+$big-font-family: "unbounded";
+$small-font-family: "PT serif";
+
+* {
+  color: $white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+
+  p {
+    font-weight: 300;
+    font-family: $small-font-family;
+    font-size: 16px;
+    color: $light-purple;
+  }
+
+  header {
+    font-size: $big-font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    #title {
+      display: flex;
+      flex-direction: row;
+      width: 100vw;
+      justify-content: center;
+
+      h1 {
+        color: $secondary-color;
+        font-weight: 800;
+        padding: 1rem 1rem 0 1rem;
+        font-family: $big-font-family;
+      }
+
+      a {
+        justify-self: start;
+      }
+    }
+
+    #description {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      p {
+        font-size: 1rem;
+        padding: 1rem;
+        max-width: 700px;
+      }
+    }
+
+    p {
+      font-size: 28px;
+      align-self: end;
+      color: $light-purple;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin: 2rem 0 2rem 2rem;
+    overflow: hidden;
+
+    button {
+      display: flex;
+      background-color: $main-color;
+      border: none;
+      margin: 1rem 0 1rem 1rem;
+      padding: 1rem 0 1rem 1rem;
+      transform-origin: left bottom;
+      transform: skewX(-40deg);
+      margin-left: 50%;
+
+      &:hover  {
+        box-shadow: 0 0 10px $white;
+        background-color: $light-purple;
+        transition: ease-in-out 0.3s;
+      }
+
+      p {
+        margin-left: 100px;
+        font-size: $big-font;
+        font-family: $big-font-family;
+        color: $secondary-color;
+        font-weight: 400;
+        transform: skewX(40deg);
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}

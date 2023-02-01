@@ -1,0 +1,90 @@
+* {
+  color: rgb(229, 229, 229);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(240deg, 73%, 9%);
+}
+body p {
+  font-weight: 300;
+  font-family: "PT serif";
+  font-size: 16px;
+  color: hsl(266deg, 100%, 91%);
+}
+body header {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body header #title {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: center;
+}
+body header #title h1 {
+  color: hsl(267deg, 87%, 56%);
+  font-weight: 800;
+  padding: 1rem 1rem 0 1rem;
+  font-family: "unbounded";
+}
+body header #title a {
+  justify-self: start;
+}
+body header #description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body header #description p {
+  font-size: 1rem;
+  padding: 1rem;
+  max-width: 700px;
+}
+body header p {
+  font-size: 28px;
+  align-self: end;
+  color: hsl(266deg, 100%, 91%);
+}
+body nav {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  margin: 2rem 0 2rem 2rem;
+  overflow: hidden;
+}
+body nav button {
+  display: flex;
+  background-color: hsl(240deg, 78%, 27%);
+  border: none;
+  margin: 1rem 0 1rem 1rem;
+  padding: 1rem 0 1rem 1rem;
+  transform-origin: left bottom;
+  transform: skewX(-40deg);
+  margin-left: 50%;
+}
+body nav button:hover {
+  box-shadow: 0 0 10px rgb(229, 229, 229);
+  background-color: hsl(266deg, 100%, 91%);
+  transition: ease-in-out 0.3s;
+}
+body nav button p {
+  margin-left: 100px;
+  font-size: 3rem;
+  font-family: "unbounded";
+  color: hsl(267deg, 87%, 56%);
+  font-weight: 400;
+  transform: skewX(40deg);
+}
+body footer {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=main.css.map */
